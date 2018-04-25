@@ -1,9 +1,11 @@
 @import 'vars';
 @import 'mixins';
 
+body{
+    background-color: antiquewhite;
+}
 
-h1{
-    color: $primary-color;
-    background: $secondary-color;
-    @include font-size(24px);
+.container{
+    max-width: 1200px;
+    margin: auto;
 }
