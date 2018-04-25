@@ -1,0 +1,9 @@
+@import 'vars';
+@import 'mixins';
+
+
+h1{
+    color: $primary-color;
+    background: $secondary-color;
+    @include font-size(24px);
+}
