@@ -120,6 +120,10 @@ figcaption {
   color: #000;
 }
 
+.section-text ul li .text-link:hover {
+  opacity: 0.5;
+}
+
 #top {
   display: flex;
   padding-top: 250px;
