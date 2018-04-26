@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #C8FFD3;
   font-family: sans-serif;
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  border: 20px solid white;
 }
 
 .container {
@@ -15,6 +21,11 @@ header {
   position: fixed;
   align-content: flex-end;
   justify-content: flex-end;
+}
+
+#logo img {
+  margin-top: 40px;
+  max-height: 80px;
 }
 
 .image-box {
@@ -31,7 +42,7 @@ header {
   font-size: 120px;
   position: absolute;
   bottom: 20px;
-  right: 30px;
+  right: 40px;
   color: white;
   font-weight: 900;
   z-index: 450;
@@ -39,10 +50,10 @@ header {
 
 .image-box .box-title {
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   right: -180px;
   font-size: 36px;
-  padding: 10px 15px;
+  padding: 10px 25px;
   background-color: blue;
   color: #fff;
   z-index: 500;
@@ -53,13 +64,13 @@ header {
   top: -15px;
   width: 500px;
   height: 500px;
-  border: 10px solid white;
+  border: 10px solid rgba(255, 255, 255, 0.8);
   z-index: 100;
 }
 
 .image-box #sp {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: -15px;
   z-index: 1;
 }
@@ -75,13 +86,22 @@ header {
   right: 10px;
 }
 
+figcaption {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  font-family: monospace;
+  font-size: 12px;
+}
+
 .section-text {
   padding-left: 100px;
   padding-top: 80px;
 }
 
-.section-text h2 {
+.section-text p {
   font-size: 28px;
+  font-weight: 700;
 }
 
 .section-text ul {
@@ -100,14 +120,67 @@ header {
   color: #000;
 }
 
-#logo img {
-  margin-top: 40px;
-  max-height: 80px;
-}
-
 #top {
   display: flex;
-  padding-top: 300px;
-  height: 100vh;
+  padding-top: 250px;
+  min-height: 98vh;
+}
+
+.bg-sp {
+  background-color: #FFE7C8;
+}
+
+.bg-lh {
+  background-color: #F3B2CC;
+}
+
+#sao-paulo, #lhouse, #hpotter {
+  display: flex;
+  min-height: 98vh;
+  padding-top: 180px;
+}
+
+#sao-paulo .section-text, #lhouse .section-text, #hpotter .section-text {
+  padding-right: 40px;
+}
+
+#sao-paulo .section-text.right, #lhouse .section-text.right, #hpotter .section-text.right {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+#sao-paulo .image-box img, #lhouse .image-box img, #hpotter .image-box img {
+  position: absolute;
+  top: -35px;
+  left: -25px;
+}
+
+#sao-paulo .image-box .box-number, #lhouse .image-box .box-number, #hpotter .image-box .box-number {
+  left: 34px;
+}
+
+#sao-paulo .image-box .hp, #lhouse .image-box .hp, #hpotter .image-box .hp {
+  left: 235px;
+}
+
+#sao-paulo .image-box .right, #lhouse .image-box .right, #hpotter .image-box .right {
+  left: auto;
+  right: 184px;
+}
+
+#sao-paulo .image-box .box-title, #lhouse .image-box .box-title, #hpotter .image-box .box-title {
+  left: -120px;
+  right: auto;
+}
+
+#sao-paulo .image-box .box-title.right, #lhouse .image-box .box-title.right, #hpotter .image-box .box-title.right {
+  left: auto;
+  right: -80px;
+}
+
+.meter-result {
+  font-family: monospace;
+  text-transform: uppercase;
+  padding-left: 15px;
 }
 /*# sourceMappingURL=main.css.map */
