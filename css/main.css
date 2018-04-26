@@ -187,4 +187,15 @@ figcaption {
   text-transform: uppercase;
   padding-left: 15px;
 }
+
+a#validate {
+  color: #000;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
+a#validate:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=main.css.map */

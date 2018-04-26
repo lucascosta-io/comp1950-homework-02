@@ -210,6 +210,17 @@ figcaption{
     padding-left: 15px;
 }
 
+a#validate{
+    color: #000;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+
+    &:hover{
+        color: rgba(#000, 0.5);
+    }
+}
+
 
 
 
